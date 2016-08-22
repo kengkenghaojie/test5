@@ -1,0 +1,41 @@
+﻿<div ng-controller="functionCtrl">
+    <!--功能按钮入口-->
+    <div class="function-button-entrance" ng-click="showFunctions()">
+        <span class="icon-iconfont-chanpinliebiaopubuliumoshi"></span>
+    </div>
+    <!--功能按钮-->
+    <div class="function-button text-center">
+        <div class="function-button-container">
+            <a href="index.html">
+                <div class="go-index">
+                    <i ng-mouseleave="mouseleaveindex($event)" ng-mouseenter="mouseenterindex($event)" class="glyphicon glyphicon-home" ui-sref="index">
+                        <span ng-mouseleave="mouseleaveindexspan($event)">主页</span>
+                    </i>
+                </div>
+            </a>
+            <a>
+                <div class="go-cars">
+                    <p class="badge">3</p>
+                    <i ng-mouseleave="mouseleavecar($event)" ng-mouseenter="mouseentercar($event)" class="glyphicon glyphicon-shopping-cart">
+                        <span ng-mouseleave="mouseleavecarspan($event)">购物车</span>
+                    </i>
+                </div>
+            </a>
+            <a>
+                <div class="go-my">
+                    <i ng-mouseleave="mouseleavemy($event)" ng-mouseenter="mouseentermy($event)" class="glyphicon glyphicon-user">
+                        <span ng-mouseleave="mouseleavemyspan($event)">我的</span>
+                    </i>
+                </div>
+            </a>
+            <a>
+                <div class="go-search">
+                    <i ng-mouseleave="mouseleavesearch($event)" ng-mouseenter="mouseentersearch($event)" class="glyphicon glyphicon-search">
+                        <span ng-mouseleave="mouseleavesearchspan($event)">搜索</span>
+                    </i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="function-button-eject-background" ng-click="hideFunctions()"></div>
+</div> 

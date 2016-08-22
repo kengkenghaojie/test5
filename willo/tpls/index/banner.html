@@ -1,0 +1,30 @@
+﻿<div class="swiper-container index-style1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="new.html">
+                <div class="content-slide">
+
+                    <img src="images/index-banner-1.png" />
+                </div>
+            </a>
+
+        </div>
+        <div class="swiper-slide">
+            <a href="new.html">
+                <div class="content-slide">
+                    <img src="images/index-banner-2.jpg" />
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-white swiper-home"></div>
+</div>
+<script>
+    var mySwiper = new Swiper('.index-style1', {
+        pagination: '.swiper-home',
+        loop: true,
+        grabCursor: true,
+        paginationClickable: true,
+    })
+</script>

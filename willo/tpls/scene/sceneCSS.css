@@ -1,0 +1,118 @@
+
+        @media (max-width: 767px) {
+            .swiper-home img {
+                width: 70px;
+                border-radius: 4px;
+            }
+        }
+        .swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-top {
+            height: 680px;
+            width: 100%;
+        }
+
+        .gallery-thumbs {
+            height: 150px;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+            .gallery-thumbs .swiper-slide {
+                width: 25%;
+                height: 100%;
+                opacity: 0.4;
+            }
+
+            .gallery-thumbs .swiper-slide-active {
+                opacity: 1;
+            }
+
+        .go-specific-scene-box {
+            position: relative;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:600px;
+        }
+
+        .go-specific-scene {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .scene-detales {
+            position: absolute;
+            bottom: -60px;
+            width: 100%;
+        }
+        .share-room-bottom {
+            display: inline-block;
+            margin: 5px 3px 0 10px;
+            width: 24px;
+            height: 24px;
+        }
+        .share-room {
+            margin-top: 1.4rem;
+            width: 100%;
+        }
+        @media (max-width: 992px) and (min-width: 768px) {
+            .scene-detales{
+                bottom:-80px;
+            }
+            .gallery-thumbs {
+                height: 110px;
+            }
+            .go-specific-scene-box {
+                height: 400px;
+            }
+            .gallery-top {
+                height: 480px;
+            }
+        }
+        @media (max-width: 767px){
+            .go-specific-scene-box {
+                height: 210px;
+            }
+            .scene-detales {
+                bottom: -160px;
+                left: 15px;
+            }
+            .gallery-top {
+                height: 370px;
+                width: 100%;
+            }
+            .gallery-thumbs {
+                height: 70px;
+            }
+            .swiper-button-prev, .swiper-button-next{
+                display:none;
+            }
+        }
+        .panorama {
+            position: absolute;
+            bottom: 15px;
+            right: 0;
+            text-indent: 0;
+            text-decoration: none;
+            background-color: #fff;
+            text-transform: uppercase;
+            font-size: .75rem;
+            line-height: 14px;
+            padding: 8px .75rem 8px 8px;
+            width: 60px;
+            text-align: left;
+            box-shadow: #666666 -3px 2px 2px -1px;
+            font-family: 'Gill Sans W01 Light', sans-serif;
+            text-align: center;
+        }

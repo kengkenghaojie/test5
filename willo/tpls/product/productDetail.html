@@ -1,0 +1,75 @@
+﻿<link href="tpls/product/productCSS.css" rel="stylesheet" />
+<div ng-controller="productDetailCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="swiper-container index-style1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="content-slide">
+                                    <img ng-src="{{products.miao}}" />
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <section>
+                    <!--<div>{{products}}</div>-->
+                    <h4>{{products.name | uppercase}}</h4>
+                    <div class="details-money">{{products.price | currency}}</div>
+                </section>
+                <hr />
+                <section class="product-introduction">
+                    <label>产品介绍</label>
+                    <p>浪漫的情怀。舒适地坐在伴侣身边，或者躺在豪华和精致的沙发上。如果你正在寻找一个正式与休闲的外观之间的平衡，这一款，刚刚好。</p>
+                </section>
+                <hr />
+                <section>
+                    <label>产品参数</label>
+                    <div class="drtails-number">设计师：<span>{{products.author | uppercase}}</span></div>
+                    <div class="drtails-number">SKU：<span> W65-107921</span></div>
+                    <div class="drtails-size">尺寸：<span>1257 x 813 x 800 mm</span></div>
+                    <div class="drtails-material">材质：<span>栗子木，实木，织物</span></div>
+                    <div class="drtails-finish">Finish：<span>Water-based polyurethane finish</span></div>
+                    <div class="drtails-brand">品牌：<span>WILLO</span></div>
+                    <div class="drtails-brand">发布日期：<span>{{product.pubTime | date:"yyyy-MM-dd"}}</span></div>
+                </section>
+                <hr />
+                <section class="features">
+                    <label>Features</label>
+                    <div class="section-body">
+                        <ol>
+                            <li>Durable spot clean fabric</li>
+                            <li>Seat padded with high-density foam</li>
+                            <li>High-density foam cushion(s) for lasting comfort</li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+    <script>
+        var mySwiper = new Swiper('.index-style1', {
+            pagination: '.swiper-home',
+            loop: true,
+            grabCursor: true,
+            paginationClickable: true,
+            //autoplay: 7000,
+            //autoplayDisableOnInteraction: false
+        })
+     
+    </script>

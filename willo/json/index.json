@@ -1,0 +1,52 @@
+﻿[
+    {
+        "navId": "1",
+        "name": "SCENE",
+        "options": [
+           {"option": "desk","Id":"0"},
+		   {"option": "chairs","Id":"1"},
+		   {"option": "sleeper sofas","Id":"2"},
+		   {"option": "ottomans","Id":"3"},
+		   {"option": "media storage","Id":"4"},
+		   {"option": "sectionals","Id":"5"},
+		   {"option": "Benches & Stools","Id":"6"},
+		   {"option": "sofa","Id":"7"},
+		   {"option": "table","Id":"8"},
+		   {"option": "custom Upholstery","Id":"9"}
+        ]
+    },
+    {
+        "navId": 2,
+        "name": "LIVING",
+        "options": [
+            {"option": "sofa","Id":"0"},
+			{"option": "table","Id":"1"}
+        ]
+    },
+    {
+        "navId": 3,
+        "name": "DINING",
+        "options": [
+             {"option": "Benches","Id":"0"}
+        ]
+    },
+    {
+        "navId": 4,
+        "name": "BEDROOM",
+        "options": [
+             {"option": "Benches & Stools","Id":"0"}
+        ]
+    },
+    {
+        "navId": 5,
+        "name": "WORKPLACE",
+        "options": [
+            {
+                "option": "sofa","Id":"0"
+            },
+            {
+                "option": "table","Id":"1"
+            }
+        ]
+    }
+]

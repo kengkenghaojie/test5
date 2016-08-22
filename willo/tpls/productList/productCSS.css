@@ -1,0 +1,42 @@
+        .index-style1 img{
+            width:96%;
+            padding:0 2%;
+        }
+        .details-money {
+            font-size: 16px;
+            color: #ff4400;
+            padding-bottom: 5px;
+        }
+        label{
+            margin-bottom:5px;
+        }
+        .drtails-brand {
+            border: none;
+        }
+        .features .section-body {
+            font-size: .8rem;
+            line-height: 1.4rem;
+        }
+            .features .section-body li {
+                position: relative;
+                padding-left: 25px;
+                    line-height: 20px;
+            }
+            .features .section-body ol {
+                counter-reset: li;
+            }
+        .section-body li:before {
+            background-color: #cf7600;
+            border-radius: 15px;
+            color: #fff;
+            content: counter(li);
+            counter-increment: li;
+            font-size: 11px;
+            height: 15px;
+            left: 0px;
+            top: 3px;
+            line-height: 15px;
+            position: absolute;
+            text-align: center;
+            width: 15px;
+        }

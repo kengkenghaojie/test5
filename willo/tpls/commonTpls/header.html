@@ -1,0 +1,29 @@
+﻿<header ng-controller="headerCtrl">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <span class="icon-iconfont-iconfontfenlei" ng-click="rightNavShow()"></span>
+            <a class="navbar-brand" id="aaaaaa">
+                <img src="images/logo%20(1).png" />
+            </a>
+        </div>
+        <div class="one-nav-container navbar-right">
+            <ul class="nav navbar-nav nav-ul">
+                <li class="more line nav-li" ng-repeat="nav in navs" ng-mouseleave="mouseleave($event)" ng-mouseenter="mouseenter($event)" ng-click="clickShowNav($event)">
+                    <a>{{nav.name}}</a>
+                    <div class="nav-hover-scene clearfix" ng-mouseleave="sceneleave($event)">
+                        <div class="pull-right">
+                            <span ng-repeat="option in nav.options"><a ui-sref="productList({Id:nav.navId,productId:option.Id,productLN:option.option,senceN:nav.name})">{{option.option}}</a></span>
+                        </div>
+
+                    </div>
+                    <a class="go-sence text-willo" ui-sref="productList({Id:nav.navId,productId:option.Id})">more</a>
+                </li>
+            </ul>
+        </div>
+        <div class="eject-background" ng-click="rightNavHide()">{{navnum}}</div>
+    </div>
+
+
+</header>
+<div class="fixed-header"></div>
